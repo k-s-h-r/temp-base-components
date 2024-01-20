@@ -1,0 +1,20 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { VStack } from './VStack'
+import * as Stories from './VStack.stories';
+
+
+<Meta title="components/layout/Stack/VStack/Index" component={VStack} />
+
+# VStack
+
+VStackコンポーネント。
+
+`direction` 以外Stackコンポーネントと同様。
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+<Controls of={Stories.Default} />

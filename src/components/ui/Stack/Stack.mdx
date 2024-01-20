@@ -1,0 +1,75 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { Stack } from './Stack'
+import * as Stories from './Stack.stories';
+
+
+<Meta title="components/layout/Stack/Stack/Index" component={Stack} />
+
+# Stack
+
+Stackコンポーネント。
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+<Controls of={Stories.Default} />
+
+## 向き
+
+`vertical` または `horizontal` を指定することができます。
+
+### vertical
+<Canvas>
+  <Story of={Stories.Vertical} />
+</Canvas>
+
+### horizontal
+
+<Canvas>
+  <Story of={Stories.Horizontal} />
+</Canvas>
+
+## 間隔指定
+
+間隔を指定することができます。
+
+<Canvas>
+  <Story of={Stories.SpaceToken} />
+</Canvas>
+
+## 個別間隔指定
+
+子要素それぞれに間隔を指定することができます。  
+Stackコンポーネント直下の要素のclassに `!only-stack-space-[*]` を指定することで、その要素のみに間隔を指定することができます。  
+`!only-stack-space-[*]` には `px`, `0`, `2`, `4`, `6`, `8`, `10`, `12`, `14`, `s`, `m`, `l`, `xl` を指定することができます。
+
+<Canvas>
+  <Story of={Stories.CustomSpace} />
+</Canvas>
+
+## レスポンシブ
+
+`direction`, `space` それぞれレスポンシブ指定ができます。
+
+<Canvas>
+  <Story of={Stories.Responsive} />
+</Canvas>
+
+## 要素指定
+
+要素を指定することができます。
+
+<Canvas>
+  <Story of={Stories.CustomElement} />
+</Canvas>
+
+## 入れ子
+
+入れ子にすることができます。
+
+<Canvas>
+  <Story of={Stories.Nest} />
+</Canvas>

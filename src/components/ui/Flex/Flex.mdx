@@ -1,0 +1,33 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { Flex } from './Flex'
+import * as Stories from './Flex.stories';
+
+
+<Meta title="components/layout/Flex/Flex/Index" component={Flex} />
+
+# Flex
+
+Flexコンポーネント。
+
+カラムレイアウトを実現するためのコンポーネントです。
+
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+<Controls of={Stories.Default} />
+
+## 間隔指定
+
+<Canvas>
+  <Story of={Stories.Gap} />
+</Canvas>
+
+## 間隔指定レスポンシブ
+
+<Canvas>
+  <Story of={Stories.GapResponsive} />
+</Canvas>

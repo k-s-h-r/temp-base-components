@@ -1,0 +1,20 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { HStack } from './HStack'
+import * as Stories from './HStack.stories';
+
+
+<Meta title="components/layout/Stack/HStack/Index" component={HStack} />
+
+# HStack
+
+HStackコンポーネント。
+
+`direction` 以外Stackコンポーネントと同様。
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+<Controls of={Stories.Default} />

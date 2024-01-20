@@ -1,0 +1,104 @@
+import { Canvas, Meta, Story, ArgTypes } from '@storybook/blocks'
+import { Link } from './Link'
+import { Table } from '../Table'
+import * as Stories from './Link.stories';
+
+
+<Meta title="components/ui/Link/Index" component={Link} />
+
+# Link
+
+リンクコンポーネント。
+
+## props
+
+<ArgTypes of={Stories} exclude={['children', 'className']} />
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+## WithIcon
+
+アイコンを資料したい場合、テキストの前後、好きな位置に配置します。  
+アイコンに限らず、childrenに任意の要素を指定することができます。
+
+<Canvas>
+  <Story of={Stories.WithIconBefore} />
+</Canvas>
+
+<Canvas>
+  <Story of={Stories.WithIconAfter} />
+</Canvas>
+
+## External
+
+外部リンクの場合、指定します。  
+`target="_blank"`と`rel="noopener noreferrer"`が付与されます。
+
+<Canvas>
+  <Story of={Stories.ExternalLink} />
+</Canvas>
+
+## ExternalLinkOverwrite
+
+外部リンク指定でtargetやrelを変更したい場合、直接指定します。
+
+<Canvas>
+  <Story of={Stories.ExternalLinkOverwrite} />
+</Canvas>
+
+
+## No Link
+
+`isLink=false`、もしくは`href`指定なしでリンクを無効にすることができます。  
+`isDisabled`との違いはスタイルで、`isLink=false`の場合、薄くならずデフォルトテキスト色になります。
+
+<Canvas>
+  <Story of={Stories.NoLink} />
+</Canvas>
+
+## No Line
+
+下線を使用したくない場合、`isLine=false`を指定します。
+
+<Canvas>
+  <Story of={Stories.NoLine} />
+</Canvas>
+
+## Disabled
+
+disabledにする場合、指定します。  
+hrefの指定は不要です。  
+押したりフォーカスを受けたりすることができなくなります。
+
+<Canvas>
+  <Story of={Stories.DisabledLink} />
+</Canvas>
+
+## Utility Link
+
+ユーティリティリンク。
+
+<Canvas>
+  <Story of={Stories.UtilityLink} />
+</Canvas>
+
+## NextjsLink
+
+`<NextLink>`などフレームワーク独自のコンポーネントを渡すことができます。
+
+<Canvas>
+  <Story of={Stories.NextjsLink} />
+</Canvas>
+
+## Inline
+
+文章中などでもそのまま利用可能です。  
+`<Link>`コンポーネントはサイズ指定を持たないため、直接指定するか親のサイズを継承します。
+
+<Canvas>
+  <Story of={Stories.Inline} />
+</Canvas>

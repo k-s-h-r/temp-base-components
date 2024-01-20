@@ -1,0 +1,78 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { Grid } from './Grid'
+import * as Stories from './Grid.stories';
+
+
+<Meta title="components/layout/Grid/Grid/Index" component={Grid} />
+
+# Grid
+
+Gridコンポーネント。
+
+カラムレイアウトを実現するためのコンポーネントです。
+
+Flex版との違いは15,16カラムが利用できる、縦方向の結合が行える、など。
+
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+<Controls of={Stories.Default} />
+
+
+
+## 15カラム
+
+<Canvas>
+  <Story of={Stories.Column15} />
+</Canvas>
+
+
+## 16カラム
+
+<Canvas>
+  <Story of={Stories.Column16} />
+</Canvas>
+
+
+## 2カラム　左側のみmax-content
+
+<Canvas>
+  <Story of={Stories.Column_Max_1fr} />
+</Canvas>
+
+
+## 2カラム　右側のみmax-content
+
+<Canvas>
+  <Story of={Stories.Column_1fr_Max} />
+</Canvas>
+
+## 2カラム　左側のみauto
+
+<Canvas>
+  <Story of={Stories.Column_Auto_1fr} />
+</Canvas>
+
+## 2カラム　右側のみauto
+
+<Canvas>
+  <Story of={Stories.Column_1fr_Auto} />
+</Canvas>
+
+
+
+## 間隔指定
+
+<Canvas>
+  <Story of={Stories.Gap} />
+</Canvas>
+
+## 間隔指定レスポンシブ
+
+<Canvas>
+  <Story of={Stories.GapResponsive} />
+</Canvas>

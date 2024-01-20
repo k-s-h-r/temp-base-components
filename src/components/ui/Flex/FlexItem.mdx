@@ -1,0 +1,26 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { Flex } from './Flex'
+import * as Stories from './Flex.stories';
+import * as ItemStories from './FlexItem.stories';
+
+
+<Meta title="components/layout/Flex/Flex.Item/Index" component={Flex.Item} />
+
+# Flex.Item
+
+Flex.Itemコンポーネント。
+
+
+## default
+
+<Canvas>
+  <Story of={ItemStories.Default} />
+</Canvas>
+
+<Controls of={ItemStories.Default} />
+
+## レスポンシブ
+
+<Canvas>
+  <Story of={Stories.SpanResponsive} />
+</Canvas>

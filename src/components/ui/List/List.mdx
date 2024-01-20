@@ -1,0 +1,126 @@
+import { Canvas, Meta, Story, ArgTypes } from '@storybook/blocks'
+import { List, listClass, listItemClass } from './List'
+import * as Stories from './List.stories';
+
+
+<Meta title="components/ui/List/Index" component={List} />
+
+# List
+
+リストコンポーネント。
+
+## props
+
+<ArgTypes of={Stories} exclude={['children', 'className']} />
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+## 入れ子
+
+入れ子にすることができます。
+
+<Canvas>
+  <Story of={Stories.Nest} />
+</Canvas>
+
+## 基本アイコン
+
+アイコンを任意の文字列に変更できます。
+
+<Canvas>
+  <Story of={Stories.BaseIcon} />
+</Canvas>
+
+## カスタムビュレット（アイコン）
+
+カスタムビュレット（アイコン）を指定することができます。  
+テキストのbaselineに合わない場合、padding-topなどで調整します。  
+読み上げが必要ない場合、`<span>`などで囲み`aria-hidden="true"`を指定します。
+
+<Canvas>
+  <Story of={Stories.BaseIconReactNode} />
+</Canvas>
+
+
+## `<li>`個別カスタムビュレット（アイコン）
+
+`<li>`それぞれにカスタムビュレット（アイコン）を指定することができます。
+
+<Canvas>
+  <Story of={Stories.CustomIcon} />
+</Canvas>
+
+
+## 間隔
+
+`<li>`間の間隔を指定することができます。  
+指定可能な間隔はStackコンポーネントを参照してください。
+
+<Canvas>
+  <Story of={Stories.Space} />
+</Canvas>
+
+
+## インデント
+
+インデント量を指定することができます。
+
+<Canvas>
+  <Story of={Stories.Indent} />
+</Canvas>
+
+## 数字リスト
+
+listStyleTypeを指定することで、数字リストにすることができます。
+
+`listStyleType='decimal'`
+
+<Canvas>
+  <Story of={Stories.Orderred} />
+</Canvas>
+
+
+## 数字リスト
+[list-style-type](https://developer.mozilla.org/ja/docs/Web/CSS/list-style-type)を指定することで、数字リストのビュレットを任意に変更にすることができます。
+
+例：
+- `list-[lower-roman]`
+- `list-[cjk-earthly-branch]`
+- `list-[hiragana-iroha]`
+
+<Canvas>
+  <Story of={Stories.OrderredOtherListStyleType} />
+</Canvas>
+
+
+## 数字リスト - 逆順
+
+論理属性で、リストの項目が逆順で指定されていることを指定します。  
+項目は大きい方から小さい方へ番号付けされます。
+
+<Canvas>
+  <Story of={Stories.OrderredReverse} />
+</Canvas>
+
+
+## 数字リスト - 開始値
+
+整数値を持つ属性で、リスト項目の序数の開始値を指定します。  
+この値は、番号付けの種類が文字やローマ数字であっても、常にアラビア数字 (1, 2, 3, など) で指定します。  
+例えば、 "d" の文字や "iv" のローマ数字から始める場合は、 start="4" を使用してください。
+
+<Canvas>
+  <Story of={Stories.OrderredStart} />
+</Canvas>
+
+## classのみを利用する場合
+
+classのみを利用する場合
+
+<Canvas>
+  <Story of={Stories.OnlyClass} />
+</Canvas>

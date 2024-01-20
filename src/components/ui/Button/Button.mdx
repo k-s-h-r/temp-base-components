@@ -1,0 +1,113 @@
+import { Canvas, Meta, Story, ArgTypes } from '@storybook/blocks'
+import { Button } from './Button'
+import * as Stories from './Button.stories';
+
+
+<Meta title="components/ui/Button/Index" component={Button} />
+
+# Button
+
+ボタンコンポーネント。
+
+## props
+
+<ArgTypes of={Stories} exclude={['children', 'className']} />
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+
+
+## プライマリ
+
+プライマリボタンは、ページ内で最も重要なアクション事に使用します。  
+（例：「同意」、「送信」、「応募」）
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+## セカンダリ
+
+プライマリボタンに比べて優先度が下がるアクションに対して使用します。  
+（例：「問い合わせ」）
+
+<Canvas>
+  <Story of={Stories.Secondary} />
+</Canvas>
+
+## ターシャリ
+
+プライマリボタン及びセカンダリボタンと比べて優先度が低い3つ目のアクションに対して使用します。  
+（例：「キャンセル」）
+
+<Canvas>
+  <Story of={Stories.Teriary} />
+</Canvas>
+
+## サイズ
+
+sizeを指定することができます。
+
+<Canvas>
+  <Story of={Stories.SizeXS} />
+</Canvas>
+
+<Canvas>
+  <Story of={Stories.SizeS} />
+</Canvas>
+
+<Canvas>
+  <Story of={Stories.SizeM} />
+</Canvas>
+
+<Canvas>
+  <Story of={Stories.SizeL} />
+</Canvas>
+
+## アイコン
+
+アイコンを指定することができます。
+
+アイコンに限らず、childrenに任意の要素を指定することができます。
+
+<Canvas>
+  <Story of={Stories.WithIcon} />
+</Canvas>
+
+## ページ上部に戻るボタン
+
+他の遷移ボタン内で使用している直角罫線のアイコンとは異なる上向きの矢印アイコンを使用し、明示的にページの上部へ表示領域が「動く」アイコンを設置する。
+
+<Canvas>
+  <Story of={Stories.PageTopButton} />
+</Canvas>
+
+## Link
+
+`<a>`タグを使用したリンクボタンです。
+
+<Canvas>
+  <Story of={Stories.Link} />
+</Canvas>
+
+
+## NextjsLink
+
+`<NextLink>`などフレームワーク独自のコンポーネントを渡すことができます。
+
+<Canvas>
+  <Story of={Stories.NextjsLink} />
+</Canvas>
+
+## disabled
+
+論理属性で、ユーザーがボタンを操作することを抑止します。押したりフォーカスを受けたりすることができなくなります。
+
+<Canvas>
+  <Story of={Stories.Disabled} />
+</Canvas>
+

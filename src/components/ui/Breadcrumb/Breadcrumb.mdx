@@ -1,0 +1,68 @@
+import { Canvas, Meta, Story } from '@storybook/blocks'
+import { Breadcrumb } from './Breadcrumb'
+import * as Stories from './Breadcrumb.stories';
+
+
+<Meta title="components/ui/Breadcrumb/Index" component={Breadcrumb} />
+
+# Breadcrumb
+
+Breadcrumbコンポーネント。
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+## 文字列が長い場合のサンプル
+
+<Canvas>
+  <Story of={Stories.LongLabelExample} />
+</Canvas>
+
+## セパレータ指定 - React要素
+
+<Canvas>
+  <Story of={Stories.Separator} />
+</Canvas>
+
+## セパレータ指定 - 文字列
+
+<Canvas>
+  <Story of={Stories.Separator2} />
+</Canvas>
+
+## プロパティ指定
+
+`items`プロパティで配列を渡すことで、Breadcrumbを構成することができます。
+
+<Canvas>
+  <Story of={Stories.PropItems} />
+</Canvas>
+
+## 要素指定
+
+`itemAs`プロパティで一括で要素を変更することができます。
+例えば、`<NextLink>`要素を使いたい場合は、`itemAs={NextLink}`を指定します。
+
+<Canvas>
+  <Story of={Stories.PropItemsAsProp} />
+</Canvas>
+
+## 個別要素指定
+
+`items`プロパティで配列にasプロパティを追加することで、個別に要素を変更することができます。
+
+<Canvas>
+  <Story of={Stories.PropItemsAsProp2} />
+</Canvas>
+
+## 任意のプロパティ指定
+
+`items`プロパティで配列に任意のプロパティを追加することで、個別に属性を追加することができます。
+
+<Canvas>
+  <Story of={Stories.PropItemsOtherProps} />
+</Canvas>
+

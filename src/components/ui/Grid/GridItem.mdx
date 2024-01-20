@@ -1,0 +1,25 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { Grid } from './Grid'
+import * as GridStories from './Grid.stories';
+import * as Stories from './GridItem.stories';
+
+
+<Meta title="components/layout/Grid/Grid.Item/Index" component={Grid.Item} />
+
+# Grid.Item
+
+Grid.Itemコンポーネント。
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
+
+<Controls of={Stories.Default} />
+
+## レスポンシブ
+
+<Canvas>
+  <Story of={GridStories.ColSpanResponsive} />
+</Canvas>

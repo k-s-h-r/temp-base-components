@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/blocks'
+import { ContentSpace } from './ContentSpace'
+import * as Stories from './ContentSpace.stories';
+
+
+<Meta title="components/layout/ContentSpace/Index" component={ContentSpace} />
+
+# ContentSpace
+
+ContentSpaceコンポーネント。
+
+このコンポーネントの中に配置された子要素は上下にマージンが付与される。  
+各要素のマージンは`src/app/globals.css`の`.content-space`で定義されている。
+
+## 各要素のマージン (上マージン/下マージン)
+
+- H1: 64px / 24px
+- H2: 64px / 24px
+- H3: 40px / 24px
+- H4: 40px / 16px
+- H5: 40px / 16px
+- H6: 24px / 16px
+- その他: 24px / 24px
+
+## default
+
+<Canvas>
+  <Story of={Stories.Default} />
+</Canvas>
