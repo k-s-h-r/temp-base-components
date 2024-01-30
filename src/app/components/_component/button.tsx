@@ -22,7 +22,7 @@ export default function ButtonComponent() {
       <Heading as="h2" size="m" id="button">
         Button
       </Heading>
-      <StorybookButton href="https://digital-go-jp-design-system-storybook.vercel.app/?path=/docs/components-ui-button-index--docs" />
+      <StorybookButton href="https://temp-base-components-storybook.vercel.app/?path=/docs/components-ui-button-index--docs" />
       <Grid gap="l">
         <Grid.Item colSpan={4}>
           <Button variant="primary" width="full">

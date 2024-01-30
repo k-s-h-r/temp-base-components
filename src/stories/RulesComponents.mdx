@@ -6,11 +6,9 @@ import { Meta } from '@storybook/blocks'
 
 各コンポーネントは、以下のルールに従って実装してください。
 
-
 ## UI Componentにロジックを持たせない
 
 UI Componentは見た目と振る舞いのみを担当し、ビジネスロジックは持たせないようにしてください。
-
 
 ## html要素のデフォルトattributeを使用する
 
@@ -22,23 +20,8 @@ htmlで用意されているattributeはそのまま使用できるようにし�
 - a要素の`href`
 - ul要素の`reversed`
 
-
 ## Componentにmarginを持たせない
 
-`margin`はcomponentに持たせず、componentを使用する側で調整してください。  
+`margin`はcomponentに持たせず、componentを使用する側で調整してください。
 
 ※ `Stack`, `Flex`, `Grid` などのlayout componentを使用します。
-
-
-## booleanな値をもつプロパティはisXXXという名前にする（推奨）
-
-html要素がデフォルトで持つbooleanなattributeと差別化するために、`isXXX`という名前にしてください。
-
-※（メモ）isRequiredは後で見直し
-
-### 例
-
-- Linkコンポーネントの`isDisabled`
-- Paginationコンポーネントの`isSimple`
-- Inputコンポーネントの`isError`
-

@@ -19,7 +19,7 @@ export default function ButtonComponent() {
       <Heading as="h2" size="m" id="stack">
         Stack
       </Heading>
-      <StorybookButton href="https://digital-go-jp-design-system-storybook.vercel.app/?path=/docs/components-layout-stack-stack-index--docs" />
+      <StorybookButton href="https://temp-base-components-storybook.vercel.app/?path=/docs/components-layout-stack-stack-index--docs" />
       <Stack space="m" direction="vertical">
         <div className="bg-bg-secondary text-center p-4">Stack(vertical)</div>
         <div className="bg-bg-secondary text-center p-4">Stack(vertical)</div>

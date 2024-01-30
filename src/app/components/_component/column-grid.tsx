@@ -19,7 +19,7 @@ export default function ButtonComponent() {
       <Heading as="h2" size="m" id="grid">
         カラム(Grid)
       </Heading>
-      <StorybookButton href="https://digital-go-jp-design-system-storybook.vercel.app/?path=/docs/components-layout-grid-grid-index--docs" />
+      <StorybookButton href="https://temp-base-components-storybook.vercel.app/?path=/docs/components-layout-grid-grid-index--docs" />
 
       <Heading as="h3" size="xs">
         12カラム

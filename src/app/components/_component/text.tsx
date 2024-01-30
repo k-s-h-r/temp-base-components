@@ -20,7 +20,7 @@ export default function TextComponent() {
       <Heading as="h2" size="m" id="text">
         Text
       </Heading>
-      <StorybookButton href="https://digital-go-jp-design-system-storybook.vercel.app/?path=/docs/components-ui-text--docs" />
+      <StorybookButton href="https://temp-base-components-storybook.vercel.app/?path=/docs/components-ui-text--docs" />
       <Grid gap="m">
         <Grid.Item colSpan={12}>
           <Text size="bodyL">bodyL</Text>

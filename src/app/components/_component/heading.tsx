@@ -21,7 +21,7 @@ export default function HeadingComponent() {
       <Heading as="h2" size="m" id="heading">
         Heading
       </Heading>
-      <StorybookButton href="https://digital-go-jp-design-system-storybook.vercel.app/?path=/docs/components-ui-heading--docs" />
+      <StorybookButton href="https://temp-base-components-storybook.vercel.app/?path=/docs/components-ui-heading--docs" />
       <Grid gap="m">
         <Grid.Item colSpan={12}>
           <Heading as="p" size="2xl">
